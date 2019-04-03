@@ -14,7 +14,6 @@ public class UserController {
     UserService userService;
     @GetMapping("/index")
     public List<User> index(){
-        int i=10/0;
         return userService.list();
     }
 }
